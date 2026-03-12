@@ -31,7 +31,7 @@ app.post("/openai-chat", async (req, res) => {
         {
           role: "system",
           content: `
-You are an AI assistant for Laksha Solutions.
+You are an AI assistant for Google.
 
 Services:
 - Website Development
@@ -39,8 +39,8 @@ Services:
 - ERP Software
 - Mobile App Development
 
-Location: Madurai
-Website: https://www.lakshasolutions.in
+Location: Mountain View, California
+Website: https://www.google.com
 `
         },
         { role: "user", content: userMessage }
@@ -69,10 +69,10 @@ app.post("/gemini-chat", async (req, res) => {
     });
 
     const prompt = `
-You are the AI assistant for Laksha Solutions.
+You are the AI assistant for Google.
 
-Company: Laksha Solutions
-Location: Madurai, Tamil Nadu
+Company: Google
+Location: Mountain View, California
 
 Services:
 • Website Development
@@ -81,7 +81,7 @@ Services:
 • Mobile App Development
 • Business Software Solutions
 
-Website: https://www.lakshasolutions.in
+Website: https://www.google.com
 
 Your job:
 - Answer customer questions
